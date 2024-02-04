@@ -5,7 +5,7 @@ const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const session = require('express-session');
 const ejs = require('ejs');
 const mongoose = require('mongoose');
-const bcrypt = require('bcryptjs'); // Added for password hashing
+const bcrypt = require('bcrypt'); // Added for password hashing
 const FacebookStrategy = require('passport-facebook').Strategy;
 const flash = require('connect-flash');
 const multer = require('multer'); 
@@ -140,8 +140,8 @@ passport.use(new FacebookStrategy({
 
 
 passport.use(new GoogleStrategy({
-  clientID: '148505435130-0pfek1354hk0trad6hdsliqtso4bih4h.apps.googleusercontent.com',
-  clientSecret: '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',
+  clientID: '148505435130-cv24i1o8dqv18o0pgonbaor3t1bl56s5.apps.googleusercontent.com',
+  clientSecret: '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',
   callbackURL: 'http://localhost:3000/auth/google/callback',
 },
 (accessToken, refreshToken, profile, done) => {

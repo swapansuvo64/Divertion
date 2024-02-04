@@ -5,7 +5,7 @@ const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const session = require('express-session');
 const ejs = require('ejs');
 const mongoose = require('mongoose');
-const bcrypt = require('bcryptjs'); // Added for password hashing
+ // Added for password hashing
 const FacebookStrategy = require('passport-facebook').Strategy;
 const flash = require('connect-flash');
 const multer = require('multer'); 

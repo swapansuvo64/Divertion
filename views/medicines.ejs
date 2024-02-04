@@ -1,0 +1,47 @@
+<!-- views/medicines.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles2.css">
+    <title>Medicine Store</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Medicine Store</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/medicines">Medicine List</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2 class="section-title">Featured Medicines</h2>
+        <div class="medicine-list">
+            <% if (medicines.length > 0) { %>
+                <% medicines.forEach(medicine => { %>
+                    <div class="medicine-card">
+                        <img class="medicine-image" src="data:<%= medicine.image.contentType %>;base64,<%= medicine.image.data.toString('base64') %>" alt="<%= medicine.name %> Photo">
+                        <div class="medicine-details">
+                            <h3 class="medicine-name"><%= medicine.name %></h3>
+                            <p class="medicine-type">Type: <%= medicine.type %></p>
+                            <p class="medicine-price">$<%= medicine.price.toFixed(2) %></p><br><br><br>
+                            <div class="medicine-actions">
+                                <!-- Add the edit and delete links here -->
+                                <a href="/edit/<%= medicine._id %>" class="edit-btn">Edit</a>
+                                <a href="/delete/<%= medicine._id %>" class="delete-btn">Delete</a>
+                            </div>
+                        </div>
+                    </div>
+                <% }); %>
+            <% } else { %>
+                <p>No medicines available.</p>
+            <% } %>
+        </div>
+    </main>
+</body>
+
+</html>

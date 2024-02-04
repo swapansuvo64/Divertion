@@ -1,0 +1,26 @@
+<!-- views/delete.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Delete Medicine</title>
+</head>
+<body>
+    <header>
+        <h1>Delete Medicine</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/medicines">Medicine List</a>
+        </nav>
+    </header>
+
+    <main>
+        <p>Are you sure you want to delete the medicine "<%= medicine.name %>"?</p>
+        <form action="/delete/<%= medicine._id %>" method="post">
+            <button type="submit">Delete</button>
+        </form>
+    </main>
+</body>
+</html>

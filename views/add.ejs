@@ -1,0 +1,37 @@
+<!-- views/add.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles2.css">
+    <title>Add Medicine</title>
+</head>
+<body>
+    <header>
+        <h1>Add Medicine</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/medicines">Medicine List</a>
+        </nav>
+    </header>
+
+    <main>
+        <form action="/add" method="post" enctype="multipart/form-data">
+            <label for="medicineName">Medicine Name:</label>
+            <input type="text" name="medicineName" required>
+
+            <label for="medicineType">Medicine Type:</label>
+            <input type="text" name="medicineType" required>
+
+            <label for="medicinePrice">Medicine Price:</label>
+            <input type="number" name="medicinePrice" required>
+
+            <label for="medicineImage">Upload Medicine Photo:</label>
+            <input type="file" name="medicineImage" accept="image/*" required>
+
+            <button type="submit">Add Medicine</button>
+        </form>
+    </main>
+</body>
+</html>

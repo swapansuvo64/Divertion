@@ -1,0 +1,34 @@
+<!-- views/edit.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Edit Medicine</title>
+</head>
+<body>
+    <header>
+        <h1>Edit Medicine</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/medicines">Medicine List</a>
+        </nav>
+    </header>
+
+    <main>
+        <form action="/edit/<%= medicine._id %>" method="post">
+            <label for="medicineName">Medicine Name:</label>
+            <input type="text" name="medicineName" value="<%= medicine.name %>" required>
+
+            <label for="medicineType">Medicine Type:</label>
+            <input type="text" name="medicineType" value="<%= medicine.type %>" required>
+
+            <label for="medicinePrice">Medicine Price:</label>
+            <input type="number" name="medicinePrice" value="<%= medicine.price %>" required>
+
+            <button type="submit">Update Medicine</button>
+        </form>
+    </main>
+</body>
+</html>

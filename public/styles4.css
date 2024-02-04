@@ -1,0 +1,105 @@
+/* Add this to your CSS file or within a <style> tag in your HTML file */
+
+
+/* Style for class a1 */
+
+#hospitalList {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0;
+}
+
+#hospitalList li {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    padding: 10px;
+    font-family: 'Arial', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#hospitalList li:hover {
+    background-color: #e0e0e0;
+}
+#hospitalList {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0;
+}
+
+#hospitalList li {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#hospitalList li:hover {
+    background-color: #f5f5f5;
+    transform: translateY(-2px);
+}
+/* Add this to your CSS file or within a <style> tag in your HTML file */
+#hospitalList {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0;
+}
+
+#hospitalList li {
+    background: linear-gradient(to right, #3498db, #2980b9); /* Gradient background */
+    color: #ffffff; /* Text color */
+    border: 1px solid #2980b9;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#hospitalList li:hover {
+    background: linear-gradient(to right, #2980b9, #3498db); /* Gradient background on hover */
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#hospitalList {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0;
+}
+
+#hospitalList li {
+    background: linear-gradient(to right, #3498db, #2980b9); /* Gradient background */
+    color: #ffffff; /* Text color */
+    border: 2px solid #3498db; /* Border color */
+    border-radius: 12px;
+    margin-bottom: 15px;
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#hospitalList li:hover {
+    background: linear-gradient(to right, #2980b9, #3498db); /* Gradient background on hover */
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-color: #2980b9; /* Border color on hover */
+}
+#hospitalList {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+

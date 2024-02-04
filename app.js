@@ -10,7 +10,8 @@ const FacebookStrategy = require('passport-facebook').Strategy;
 const flash = require('connect-flash');
 const multer = require('multer'); 
 const path = require('path');
-
+const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const app = express();
 
 app.set('view engine', 'ejs');

@@ -5,12 +5,11 @@ const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const session = require('express-session');
 const ejs = require('ejs');
 const mongoose = require('mongoose');
-const bcrypt = require('bcrypt'); // Added for password hashing
+const bcrypt = require('bcryptjs'); // Added for password hashing
 const FacebookStrategy = require('passport-facebook').Strategy;
 const flash = require('connect-flash');
 const multer = require('multer'); 
 const path = require('path');
-const bcrypt = require('bcryptjs');
 const app = express();
 
 app.set('view engine', 'ejs');
